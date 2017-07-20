@@ -19,19 +19,27 @@
         <router-view></router-view>
       </v-container>
     </main>
-    <a-side-cart></a-side-cart>
+    <v-navigation-drawer clipped right temporary v-model="cartOpen">
+      <a-side-cart></a-side-cart>
+    </v-navigation-drawer>
     <v-footer></v-footer>
   </v-app>
 </template>
 
 <script>
-import { mapMutations } from 'vuex'
 import ASideCart from '@/components/ASideCart'
 
 export default {
   name: 'app',
+  data () {
+    return {
+      cartOpen: false
+    }
+  },
   methods: {
-    ...mapMutations(['toggleCart'])
+    toggleCart () {
+      this.cartOpen = !this.cartOpen
+    }
   },
   components: {
     ASideCart
