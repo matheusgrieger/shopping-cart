@@ -1,0 +1,19 @@
+/*
+ * File used to configure Vuetify theme
+ * Need to use Stylus because Vuetify was made with it
+ * Otherwise would have used SCSS
+ */
+
+@import '~vuetify/src/stylus/settings/_colors'
+
+$theme := {
+  primary: $cyan.lighten-4
+  accent: $blue.accent-3
+  secondary: $light-blue.lighten-3
+  info: $blue-grey.base
+  warning: $amber.base
+  error: $deep-orange.base
+  success: $green.base
+}
+
+@import '~vuetify/src/stylus/main'
