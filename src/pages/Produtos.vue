@@ -35,7 +35,7 @@
         </v-flex>
       </v-layout>
     </v-container>
-    <v-layout row justify-center>
+    <v-layout row justify-center v-show="totalPages > 1">
       <v-pagination v-model="page" :length="totalPages"></v-pagination>
     </v-layout>
   </v-container>
