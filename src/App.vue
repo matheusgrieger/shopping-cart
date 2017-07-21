@@ -15,12 +15,10 @@
       </v-btn>
     </v-toolbar>
     <main>
-      <v-container>
-        <router-view></router-view>
-      </v-container>
+      <router-view></router-view>
     </main>
-    <v-navigation-drawer clipped right temporary v-model="cartOpen">
-      <a-side-cart></a-side-cart>
+    <v-navigation-drawer clipped right temporary v-model="cartOpen" dark>
+      <a-side-cart @close-cart="cartOpen = false"></a-side-cart>
     </v-navigation-drawer>
     <v-footer></v-footer>
   </v-app>
@@ -43,6 +41,13 @@ export default {
   },
   components: {
     ASideCart
+  },
+  created () {
+    this.$store.subscribe((mutation, state) => {
+      if (mutation.type === 'addToCart') {
+        this.cartOpen = true
+      }
+    })
   }
 }
 </script>

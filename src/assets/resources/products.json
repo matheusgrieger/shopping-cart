@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Calça Jeans",
+    "price": 149.9,
+    "id": 1
+  },
+  {
+    "title": "Camisa Xadrez",
+    "price": 99,
+    "id": 2
+  },
+  {
+    "title": "Camisa Polo",
+    "price": 129.99,
+    "id": 3
+  },
+  {
+    "title": "Calça Jeans 2",
+    "price": 199.9,
+    "id": 4
+  },
+  {
+    "title": "Camiseta Homem de Ferro",
+    "price": 49.9,
+    "id": 5
+  },
+  {
+    "title": "Camiseta Capitão América",
+    "price": 49.9,
+    "id": 6
+  },
+  {
+    "title": "Camiseta Thor",
+    "price": 49.9,
+    "id": 7
+  },
+  {
+    "title": "Camiseta Homem-Aranha",
+    "price": 59.9,
+    "id": 8
+  },
+  {
+    "title": "Camiseta Hulk",
+    "price": 49.9,
+    "id": 9
+  },
+  {
+    "title": "Calça de Abrigo",
+    "price": 39.9,
+    "id": 10
+  },
+  {
+    "title": "Casaco de Couro",
+    "price": 279.9,
+    "id": 11
+  },
+  {
+    "title": "Casaco Plumado",
+    "price": 399.9,
+    "id": 12
+  }
+]
